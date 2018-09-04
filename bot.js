@@ -13,7 +13,7 @@ Client.on("guildMemberRemove", member => {
 :kissing_heart:  واتمنه تشرفونا و تدخلون 
 
 ادخل للسيرفر  
- https://discord.gg/6zNmbh
+ https://discord.gg/jXG6Md
 **
 ***========================================***
 ** Ahnk you in our server, we are honored
@@ -21,7 +21,7 @@ Client.on("guildMemberRemove", member => {
 :kissing_heart: And let us have a good time
 
 join server  
- https://discord.gg/6zNmbh
+ https://discord.gg/jXG6Md
 
 
 
@@ -38,7 +38,7 @@ join server
 :kissing_heart:  واتمنه تشرفونا و تدخلون 
 
 ادخل للسيرفر  
- https://discord.gg/6zNmbh
+ https://discord.gg/jXG6Md
 **
 ***========================================***
 ** Ahnk you in our server, we are honored
@@ -46,7 +46,7 @@ join server
 :kissing_heart: And let us have a good time
 
 join server  
- https://discord.gg/6zNmbh
+ https://discord.gg/jXG6Md
 
 
 **

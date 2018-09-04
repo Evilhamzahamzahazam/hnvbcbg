@@ -9,7 +9,7 @@ client.on("guildMemberRemove", member => {
 **
 شرفنا يا عسل:wink: :kissing_heart:
 **
-حط الرابط هنا
+https://discord.gg/rEbSMu
                          
 الدعووة خاصة لك ي قلبي ... [ ${member}  ]
 **`) 
@@ -22,7 +22,7 @@ client.on("guildMemberAdd", member => {
 **
 شرفنا يا عسل:wink: :kissing_heart:
 **
-حط الرابط هنا
+https://discord.gg/rEbSMu
                          
 الدعووة خاصة لك ي قلبي ... [ ${member}  ]
 **`) 

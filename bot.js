@@ -57,4 +57,4 @@ join server
 
 
 
-Client.login("توكن");
+Client.login("NDg2NDEyMzE0MDUzMTgxNDQw.Dm_6RQ.KOBcS71p3bIrjbxaIlJIxQ-JvlU");

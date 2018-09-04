@@ -8,7 +8,7 @@ console.log("Welcome Again  by Fox!");
 
 Client.on("guildMemberRemove", member => {
   member.send(`
-**اهلن فيك في سيرفرنا  تشرفنا 
+**اهلن فيك في سيرفرنا  تشرفنا .
 :heart:  سوف تقام فعاليت كبيره  والسيرفر قيد التحديث 
 :kissing_heart:  واتمنه تشرفونا و تدخلون 
 

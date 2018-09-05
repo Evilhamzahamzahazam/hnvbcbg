@@ -1,60 +1,46 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const bot = new Discord.Client();
+client.on('ready', () => {
+  console.log('╔[════════════════════════════════════]╗');
+  console.log('            ╔[════════════]╗')
+  console.log('              Bot Is Online')
+  console.log('            ╚[════════════]╝')
+  console.log('╚[════════════════════════════════════]╝')
+});
 
-const Discord = require("discord.js");
-const Client = new Discord.Client();
-
-
-console.log("Welcome Again  by Fox!");
-
-
-Client.on("guildMemberRemove", member => {
-  member.send(`
-**اهلن فيك في سيرفرنا  تشرفنا .
-:heart:  سوف تقام فعاليت كبيره  والسيرفر قيد التحديث 
-:kissing_heart:  واتمنه تشرفونا و تدخلون 
-
-ادخل للسيرفر  
- https://discord.gg/jXG6Md
-**
-***========================================***
-** Ahnk you in our server, we are honored
-:heart: will be a significant effectiveness and the server is under update
-:kissing_heart: And let us have a good time
-
-join server  
- https://discord.gg/jXG6Md
-
-
-
-**
-[${member}]`);
-
-  });
+console.log("Welcome Again !");
  
-
-  Client.on('guildMemberAdd', member => {
-  member.send(`
-**اهلن فيك في سيرفرنا  تشرفنا 
-:heart:  سوف تقام فعاليت كبيره  والسيرفر قيد التحديث 
-:kissing_heart:  واتمنه تشرفونا و تدخلون 
-
-ادخل للسيرفر  
- https://discord.gg/jXG6Md
-**
-***========================================***
-** Ahnk you in our server, we are honored
-:heart: will be a significant effectiveness and the server is under update
-:kissing_heart: And let us have a good time
-
-join server  
- https://discord.gg/jXG6Md
+ client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
 
 
-**
-[${member}]`);
+//https://discord.gg/jXG6Md
 
 
-  });
+ ${member}  
+`)
+}).catch(console.error)
+
+})
+ 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
 
 
 
-Client.login("توكن");
+//https://discord.gg/jXG6Md
+
+
+ ${member}  
+`) 
+}).catch(console.error)
+})
+
+
+
+
+
+client.login('  توكن بوتك هنا   ');

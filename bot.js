@@ -1,60 +1,49 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = '.'
 
-const Discord = require("discord.js");
-const Client = new Discord.Client();
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
+});
 
 
-console.log("Welcome Again  by Fox!");
-
-
-Client.on("guildMemberRemove", member => {
-  member.send(`
-**اهلن فيك في سيرفرنا  تشرفنا 
-:heart:  سوف تقام فعاليت كبيره  والسيرفر قيد التحديث 
-:kissing_heart:  واتمنه تشرفونا و تدخلون 
-
-ادخل للسيرفر  
- https://discord.gg/jXG6Md
-**
-***========================================***
-** Ahnk you in our server, we are honored
-:heart: will be a significant effectiveness and the server is under update
-:kissing_heart: And let us have a good time
-
-join server  
- https://discord.gg/jXG6Md
-
-
-
-**
-[${member}]`);
-
-  });
+console.log("BOT ONLINE");
  
-
-  Client.on('guildMemberAdd', member => {
-  member.send(`
-**اهلن فيك في سيرفرنا  تشرفنا 
-:heart:  سوف تقام فعاليت كبيره  والسيرفر قيد التحديث 
-:kissing_heart:  واتمنه تشرفونا و تدخلون 
-
-ادخل للسيرفر  
- https://discord.gg/jXG6Md
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
 **
-***========================================***
-** Ahnk you in our server, we are honored
-:heart: will be a significant effectiveness and the server is under update
-:kissing_heart: And let us have a good time
-
-join server  
- https://discord.gg/jXG6Md
-
-
-**
-[${member}]`);
-
-
-  });
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/uWXmw6K ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
 
 
-Client.login("NDg2ODE4MzgzMzU5MjQ2MzQ0.DnEosQ.93NAMvtdHqdAJwZ20mSnQ_aWN9Y");
+
+client.login(process.env.BOT_TOKEN);
